@@ -1,0 +1,16 @@
+langchain
+langchain-core
+langchain-openai
+langchain-anthropic
+langchain-groq
+langchain-huggingface
+langchain-google-genai
+google-generativeai
+openai
+anthropic
+groq
+huggingface-hub
+transformers
+python-dotenv
+numpy
+scikit-learn
