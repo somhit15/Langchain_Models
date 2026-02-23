@@ -26,6 +26,13 @@ def cosine_similarity(vec1, vec2):
     norm_b = np.linalg.norm(vec2)
     return dot_product / (norm_a * norm_b)
 
+max_sim=-1000000
 for i, doc_emb in enumerate(d_embeddings):
     similarity = cosine_similarity(q_embeddings, doc_emb)
-    print(f"Similarity with doc {i}: {similarity:.4f}")
+    if similarity > max_sim:
+        max_sim = similarity
+        max_idx = i
+    #print(f"Similarity with doc {i}: {similarity:.4f}")
+
+
+print(f"Max similarity is with doc {doc[max_idx]}")
