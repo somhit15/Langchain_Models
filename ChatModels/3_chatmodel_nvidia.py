@@ -3,9 +3,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model = ChatNVIDIA(model="z-ai/glm4.7",
-                   api_key="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")
+model = ChatNVIDIA(model="z-ai/glm4.7")
 
-result = model.invoke("What is the capital of Jharkhand?")
+result = model.invoke("What is the capital of India ?")
 
 print(result)
