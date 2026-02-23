@@ -4,8 +4,6 @@ langchain-openai
 langchain-anthropic
 langchain-groq
 langchain-huggingface
-langchain-google-genai
-google-generativeai
 openai
 anthropic
 groq
